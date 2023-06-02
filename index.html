@@ -15,6 +15,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
@@ -28,6 +29,11 @@
                     <li class="menu-item"><a class="menu-link link" href="#">Contacts</a></li>
                 </ul>
             </nav>
+            <button type="button" class="mobile-menu-open-btn js-open-menu" aria-expanded="false">
+                <svg class="mobile-menu-open-btn-icon" width="32" height="22">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
             <address class="contacts-header">
                 <ul class="contacts-list list">
                     <li class="menu-item"><a class="contact-item link"
@@ -37,6 +43,78 @@
                     </li>
                 </ul>
             </address>
+        </div>
+        <!--  -->
+        <div class="mobile-menu-wrapper js-menu-container">
+            <div class="mobile-menu-container">
+                <!-- close -->
+                <button class="button-close-mobile-menu js-close-menu" type="button" data-modal-close>
+                    <svg class="icon-close-mobile-menu" aria-label="close icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close">
+                        </use>
+                    </svg>
+                </button>
+                <!-- nav mobile -->
+                <nav class="mobile-navigation">
+                    <ul class="mobile-menu-nav list">
+                        <li class="menu-mobile-item"><a class="menu-mobile-link link active-page"
+                                href="./index.html">Studio</a>
+                        </li>
+                        <li class="menu-mobile-item"><a class="menu-mobile-link link"
+                                href="./portfolio.html">Portfolio</a></li>
+                        <li class="menu-mobile-item"><a class="menu-mobile-link link" href="#">Contacts</a></li>
+                    </ul>
+                </nav>
+                <!-- tel,email,socials -->
+                <div class="mobile-contacts-wrapper">
+                    <address class="contacts-mobile-menu">
+                        <ul class="mobile-contacts-list list">
+                            <li class="menu-mobile-item"><a class="tel-mobile-link link" href="tel:+110001111111">+11
+                                    (000)
+                                    111-11-11</a>
+                            </li>
+                            <li class="menu-mobile-item"><a class="email-mobile-link link"
+                                    href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                    </address>
+                    <!-- social icons -->
+                    <ul class="social-icons-list-menu-mobile list">
+                        <li class="social-icons-item">
+                            <a class="social-list-link " href="#">
+                                <svg class="social-icon" aria-label="social icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-instagram">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-icons-item">
+                            <a class="social-list-link " href="#">
+                                <svg class="social-icon" aria-label="social icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-facebook">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-icons-item">
+                            <a class="social-list-link " href="#">
+                                <svg class="social-icon" aria-label="social icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-twitter">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-icons-item">
+                            <a class="social-list-link " href="#">
+                                <svg class="social-icon" aria-label="social icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-linkedin">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -61,8 +139,9 @@
                                 </use>
                             </svg>
                         </div>
-                        <h3 class="card-title">Strategy</h3>
-                        <p class="card-description">Our goal is to identify the business problem to walk away with the
+                        <h3 class="card-title-direction">Strategy</h3>
+                        <p class="card-description-direction">Our goal is to identify the business problem to walk away
+                            with the
                             perfect and creative solution.
                         </p>
                     </li>
@@ -73,8 +152,9 @@
                                 </use>
                             </svg>
                         </div>
-                        <h3 class="card-title">Punctuality</h3>
-                        <p class="card-description">Bring the key message to the brand's audience for the best price
+                        <h3 class="card-title-direction">Punctuality</h3>
+                        <p class="card-description-direction">Bring the key message to the brand's audience for the best
+                            price
                             within
                             the shortest possible
                             time.</p>
@@ -86,8 +166,9 @@
                                 </use>
                             </svg>
                         </div>
-                        <h3 class="card-title">Diligence</h3>
-                        <p class="card-description">Research and confirm brands that present the strongest digital
+                        <h3 class="card-title-direction">Diligence</h3>
+                        <p class="card-description-direction">Research and confirm brands that present the strongest
+                            digital
                             growth
                             opportunities and minimize
                             risk.</p>
@@ -99,8 +180,9 @@
                                 </use>
                             </svg>
                         </div>
-                        <h3 class="card-title">Technologies</h3>
-                        <p class="card-description">Design practice focused on digital experiences. We bring forth a
+                        <h3 class="card-title-direction">Technologies</h3>
+                        <p class="card-description-direction">Design practice focused on digital experiences. We bring
+                            forth a
                             deep
                             passion for
                             problem-solving.</p>
@@ -136,7 +218,7 @@
                     <li class="our-team-item">
                         <img class="our-team-img" src="./images/our-team/mark.jpg" alt="photo mark" width="264"
                             height="260" />
-                        <div class="container-for-podpis">
+                        <div class="container-for-employee">
                             <h3 class="card-title">Mark Guerrero</h3>
                             <p class="card-description">Product Designer</p>
                             <ul class="social-icons-list list">
@@ -178,7 +260,7 @@
                     <li class="our-team-item">
                         <img class="our-team-img" src="./images/our-team/tom.jpg" alt="photo tom" width="264"
                             height="260" />
-                        <div class="container-for-podpis">
+                        <div class="container-for-employee">
                             <h3 class="card-title">Tom Ford</h3>
                             <p class="card-description">Frontend Developer</p>
                             <ul class="social-icons-list list">
@@ -220,7 +302,7 @@
                     <li class="our-team-item">
                         <img class="our-team-img" src="./images/our-team/camila.jpg" alt="photo camila" width="264"
                             height="260" />
-                        <div class="container-for-podpis">
+                        <div class="container-for-employee">
                             <h3 class="card-title">Camila Garcia</h3>
                             <p class="card-description">Marketing</p>
                             <ul class="social-icons-list list">
@@ -262,7 +344,7 @@
                     <li class="our-team-item">
                         <img class="our-team-img" src="./images/our-team/daniel.jpg" alt="photo daniel" width="264"
                             height="260" />
-                        <div class="container-for-podpis">
+                        <div class="container-for-employee">
                             <h3 class="card-title">Daniel Wilson</h3>
                             <p class="card-description">UI Designer</p>
                             <ul class="social-icons-list list">
@@ -517,8 +599,13 @@
             </form>
         </div>
     </div>
-    <!-- script -->
+    <!-- script modal -->
     <script src="./js/modal.js"></script>
+    <!-- script mobile menu -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
