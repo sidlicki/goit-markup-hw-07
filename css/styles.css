@@ -124,7 +124,7 @@ body {
   text-transform: capitalize;
   color: var(--header-color);
 }
-/* ////////// */
+/* //////////////////////// */
 /* BACKGROUND IMAGE settings */
 /* 0px - 767px */
 @media screen and (max-width: 768px) {
@@ -208,6 +208,7 @@ body {
   /*mobile menu */
   .mobile-menu-wrapper {
     position: fixed;
+    z-index: 2;
     top: 0;
     left: 0;
     width: 100vw;
