@@ -1218,8 +1218,12 @@ body {
     margin-left: 24px;
   }
   .checkbox-span {
+    height: 20px;
     width: 24px;
-    height: 24px;
+  }
+  .contact-form-own-checkbox {
+    width: 15px;
+    height: 12px;
   }
 }
 /* 768px+ */
