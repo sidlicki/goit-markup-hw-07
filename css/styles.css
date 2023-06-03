@@ -181,6 +181,7 @@ body {
 /* HEADER */
 /* //////////////////////////////////////////////////////////// */
 /*  */
+
 /* 0px - 767px */
 @media screen and (max-width: 767px) {
   /* off visibiluty */
@@ -309,6 +310,13 @@ body {
   .social-icons-list-menu-mobile {
     display: flex;
     justify-content: space-between;
+    max-width: 328px;
+  }
+}
+/* 0px-427px */
+@media screen and (max-width: 427px) {
+  .tel-mobile-link {
+    font-size: 24px;
   }
 }
 /*  */
@@ -1197,7 +1205,12 @@ body {
 .button-modal-submit:focus {
   background-color: #404bbf;
 }
-
+/* 0px-427px */
+@media screen and (max-width: 427px) {
+  .modal {
+    width: 320px;
+  }
+}
 @media screen and (min-width: 768px) {
   .modal {
     width: 412px;
