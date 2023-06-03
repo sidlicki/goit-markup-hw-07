@@ -1016,13 +1016,16 @@ body {
   visibility: hidden;
   pointer-events: none;
 }
+/*  */
+/* modal */
 .modal {
+  width: 100%;
+  max-width: 392px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 320px;
-  width: 392px;
   min-height: 576px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -1064,8 +1067,7 @@ body {
 .button-close-modal:focus .icon-close {
   fill: #ffffff;
 }
-/*  */
-/* modal */
+
 .modal-title {
   margin-left: auto;
   margin-right: auto;
@@ -1155,6 +1157,7 @@ body {
   align-items: center;
 }
 .label-privacy-policy {
+  display: flex;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -1162,7 +1165,6 @@ body {
 }
 .checkbox-span {
   display: inline-flex;
-  margin-right: 8px;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.2);
@@ -1170,6 +1172,12 @@ body {
   align-items: center;
   justify-content: center;
   fill: transparent;
+}
+.checkbox-text {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 4px;
+  margin-left: 8px;
 }
 .contact-form-checkbox-standart:checked + .label-privacy-policy > .checkbox-span {
   background-color: #404bbf;
@@ -1179,7 +1187,6 @@ body {
 }
 .privacy-policy-link {
   color: #4d5ae5;
-  margin-left: 4px;
 }
 /* button submit */
 .button-modal-submit {
@@ -1205,19 +1212,10 @@ body {
 .button-modal-submit:focus {
   background-color: #404bbf;
 }
-/* 0px-427px */
-@media screen and (max-width: 427px) {
-  .modal {
-    width: 320px;
-  }
-  .privacy-policy-link {
-    margin-left: 180px;
-  }
-}
 /* 768px+ */
 @media screen and (min-width: 768px) {
   .modal {
-    width: 412px;
+    max-width: 408px;
     padding: 72px 24px 24px 24px;
   }
 }
