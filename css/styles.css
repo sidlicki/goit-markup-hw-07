@@ -224,7 +224,7 @@ body {
     pointer-events: auto;
   }
   .mobile-menu-container {
-    max-width: 496px;
+    max-width: 428px;
     margin-left: auto;
     margin-right: auto;
     height: 100%;
@@ -235,6 +235,7 @@ body {
     padding-left: 40px;
     padding-top: 80px;
     padding-bottom: 40px;
+    padding-right: 35px;
   }
   /* close button */
   .button-close-mobile-menu {
@@ -307,9 +308,7 @@ body {
   /* social */
   .social-icons-list-menu-mobile {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 56px;
+    justify-content: space-between;
   }
 }
 /*  */
