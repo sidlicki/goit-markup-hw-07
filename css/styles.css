@@ -124,6 +124,58 @@ body {
   text-transform: capitalize;
   color: var(--header-color);
 }
+/* ////////// */
+/* BACKGROUND IMAGE settings */
+/* 0px - 767px */
+@media screen and (max-width: 768px) {
+  .main-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/mobile/bg.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .main-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/mobile/bg@2x.jpg);
+  }
+}
+/* 
+768px +
+*/
+@media screen and (min-width: 768px) {
+  .main-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/tablet/bg.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .main-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/tablet/bg@2x.jpg));
+  }
+}
+/* 
+1158px+
+*/
+@media screen and (min-width: 1158px) {
+  .main-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/desktop/bg.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .main-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/desktop/bg@2x.jpg);
+  }
+}
+/* end background image settings */
 
 /* //////////////////////////////////////////////////////////// */
 /* HEADER */
@@ -380,15 +432,13 @@ body {
 /* //////////////////////////////////////////////////////////// */
 /* 0px+ */
 .main-section {
+  /* background image in common components */
   padding-top: 112px;
   padding-bottom: 112px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   background-color: var(--header-color);
-  /*  */
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/bg.jpg);
   background-size: cover;
   max-width: 1440px;
   background-repeat: no-repeat;
