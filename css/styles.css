@@ -1212,6 +1212,16 @@ body {
 .button-modal-submit:focus {
   background-color: #404bbf;
 }
+
+@media screen and (max-width: 371px) {
+  .checkbox-text {
+    margin-left: 24px;
+  }
+  .checkbox-span {
+    width: 24px;
+    height: 24px;
+  }
+}
 /* 768px+ */
 @media screen and (min-width: 768px) {
   .modal {
