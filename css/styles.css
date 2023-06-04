@@ -730,7 +730,7 @@ body {
 }
 .customers-list-item {
   height: 88px;
-  width: calc((100% - 24px) / 2);
+  width: calc((100% - 16px) / 2);
 }
 .customers-list-link {
   width: 100%;
